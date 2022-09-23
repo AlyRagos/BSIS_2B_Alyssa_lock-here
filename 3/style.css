@@ -1,0 +1,142 @@
+:root{
+    --open-sans: 'Open Sans', sans-serif;
+    --color-primary: #ffd39a;
+    --color-secondary: #2d2d2d;
+}
+
+*{
+    box-sizing: border-box;
+    list-style-type: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--open-sans);
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-secondary);
+}
+
+p, h1, h2, h3, h4, h5, h6{
+    margin-top: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    padding: 0 5rem;
+}
+
+.logo-link{
+    width: calc(100% - 15rem);
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    gap: 0.8rem;
+}
+
+.logo img{
+    width: 55px;
+}
+
+.logo p{
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    color: var(--color-secondary);
+}
+
+.navigation a{
+    font-weight: 600;
+    font-size: 13.5px;
+}
+.login-create{
+    display: flex;
+    gap: 1.4rem;
+    align-items: center;
+}
+.login-create a{
+    padding: 0.8rem 1.3rem;
+    border-radius: 0.2rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.login-create a:nth-child(2){
+    background-color: var(--color-primary);
+	transition: all ease-in-out 0.2s;
+
+}
+
+.login-create a:nth-child(2):hover{
+	color: white;
+	background: black;
+}
+
+.hero-section{
+    min-height: calc(100vh - 5rem);
+    text-align: center;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.overlay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    min-height: calc(100vh - 5rem);
+    text-align: center;
+}
+
+.overlay h1{
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+}
+
+.overlay p{
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+.overlay a{
+    background-color: var(--color-primary);
+    padding: 1.3rem 4rem;
+    border-radius: 2rem;
+    font-weight: 700;
+}
+
+}
+
+footer{
+	background-color: var(--color-primary);
+	margin-bottom: 3;
+	padding: 2rem 0;
+}
+footer p{
+	font-family: var(--open-sans);
+	color: var(--color-tertiary);
+}
